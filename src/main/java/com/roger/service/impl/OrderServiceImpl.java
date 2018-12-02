@@ -20,7 +20,7 @@ public class OrderServiceImpl implements IOrderService {
         return 0;
     }
 
-    @LogEvent(event = EventType.ADD,desc = "保存订单")
+    @LogEvent(event = EventType.INSERT,desc = "保存订单")
     @Override
     public int save(OrderDTO orderDTO) {
         System.out.println("****执行保存操作*****");
